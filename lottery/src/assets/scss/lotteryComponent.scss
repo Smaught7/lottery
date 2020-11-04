@@ -67,6 +67,8 @@
             height: 40%;
             border: 1px solid #15f4ee;
             border-radius: 25px;
+            box-shadow: 0 2px 25px 0 #15f4ee inset, 0 2px 25px #15f4ee,
+                0 2px 25px 0 #15f4ee inset, 0 2px 25px #15f4ee;
             transition: 1.5s;
 
             &:hover {
@@ -80,6 +82,8 @@
             height: 40%;
             border: 1px solid #15f4ee;
             border-radius: 25px;
+            box-shadow: 0 2px 25px 0 #15f4ee inset, 0 2px 25px #15f4ee,
+                0 2px 25px 0 #15f4ee inset, 0 2px 25px #15f4ee;
             transition: 1.5s;
 
             &:hover {

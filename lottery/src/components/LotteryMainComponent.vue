@@ -8,8 +8,8 @@
 
     <div class="lottery-informations">
       <div class="name-lottery-container">
-        Witaj {{ user }}
-        <!-- <button @click="openModal()">modal</button> -->
+        <div class="user-name" v-if="value == ''">Hello {{ anonimous }}</div>
+        <div class="user-name" v-else>Hello {{ value }}</div>
       </div>
       <div class="result-lottery-container">Poznaj wyniki</div>
     </div>
@@ -28,7 +28,8 @@ export default {
   components: { IfAdultModalComponent },
   data() {
     return {
-      user: "Mateusz",
+      value: "",
+      anonimous: "User",
       isModalVisible: false,
     };
   },
@@ -37,10 +38,12 @@ export default {
       this.isModalVisible = true;
     },
 
-    closeModal() {
+    closeModal(params) {
       this.isModalVisible = false;
+      this.value = params;
     },
   },
+
   beforeMount() {
     this.openModal();
   },
@@ -49,8 +52,4 @@ export default {
 
 
 <style scoped lang="scss">
-button {
-  width: 100px;
-  height: 30px;
-}
 </style>

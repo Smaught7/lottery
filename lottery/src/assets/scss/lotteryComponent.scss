@@ -63,6 +63,10 @@
         height: 100%;
 
         .name-lottery-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
             width: 40%;
             height: 40%;
             border: 1px solid #15f4ee;
@@ -74,6 +78,11 @@
             &:hover {
                 box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px #15f4ee,
                     0 5px 50px 0 #15f4ee inset, 0 5px 50px #15f4ee;
+            }
+
+            .user-name {
+                height: auto;
+                width: auto;
             }
         }
 

@@ -7,26 +7,92 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
 
     .modal {
-        .modal-header {
-            justify-content: center;
-            padding: 0;
+        width: 45%;
+        height: 45%;
+        color: #fff;
+        border-radius: 25px;
+        box-shadow: 0 2px 25px 0 #e74c3c inset, 0 2px 25px #e74c3c,
+            0 2px 25px 0 #e74c3c inset, 0 2px 25px #e74c3c;
 
-            .btn-close {
-                position: absolute;
-                right: 0;
-                top: 0;
-                border: none;
-                font-size: 20px;
-                padding: 15;
-                cursor: pointer;
-                font-weight: bold;
-                color: red;
+
+        h2 {
+            text-align: center;
+            margin: 35px 0;
+            height: auto;
+            background: transparent;
+            color: #e74c3c;
+            text-shadow: 0 0 15px #e74c3c, 0 0 25px #e74c3c, 0 0 35px #e74c3c, 0 0 60px #e74c3c, 0 0 9px #e74c3c;
+        }
+
+        .enter-msg {
+            height: auto;
+            width: 90%;
+            text-align: center;
+            margin: 30px auto;
+            background: transparent;
+
+            p {
+                height: auto;
+                background: transparent;
+                margin-bottom: 30px;
+            }
+
+            .enter-name {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: auto;
+                margin-bottom: 25px;
+
+
+                label {
+                    height: auto;
+                }
+
+                input {
+                    height: auto;
+                    color: #fff;
+                    border: 1px solid #e74c3c;
+                    border-radius: 25px;
+                    padding: 15px 0 15px 25px;
+                    font-size: 20px;
+                    box-shadow: 0 2px 15px 0 #e74c3c inset, 0 2px 15px #e74c3c,
+                        0 2px 15px 0 #e74c3c inset, 0 2px 15px #e74c3c;
+
+                    &:focus {
+                        outline-width: 0;
+                    }
+                }
+            }
+        }
+
+        .btn-close {
+            color: #e74c3c;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            padding: 20px 25px;
+            margin: 55px auto 0 auto;
+            width: auto;
+            border: 1px solid #e74c3c;
+            border-radius: 25px;
+            box-shadow: 0 2px 15px 0 #e74c3c inset, 0 2px 15px #e74c3c,
+                0 2px 15px 0 #e74c3c inset, 0 2px 15px #e74c3c;
+            text-shadow: 0 0 15px #e74c3c, 0 0 25px #e74c3c, 0 0 35px #e74c3c, 0 0 60px #e74c3c, 0 0 9px #e74c3c;
+            background: transparent;
+            font-size: 30px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                color: #ed2511;
+                box-shadow: 0 2px 25px 0 #e74c3c inset, 0 2px 25px #e74c3c,
+                    0 2px 25px 0 #e74c3c inset, 0 2px 25px #e74c3c;
             }
         }
     }
-
-
 }

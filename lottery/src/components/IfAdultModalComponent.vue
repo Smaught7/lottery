@@ -1,24 +1,21 @@
 <template>
   <div class="modal-backdrop">
     <div class="modal">
-      <header class="modal-header">
-        <slot name="header">
-          <button type="button" class="btn-close" @click="close">x</button>
-        </slot>
-      </header>
-      <div class="modal-body">
-        <slot name="body">
-          <div class="cad-msg">
-            Dana konfiguracja nie widnieje w tabeli CAD. Podaj numer wentylatora
-            pod którym wybrana konfiguracja będzie widniała w tabeli CAD:
-          </div>
-        </slot>
+      <h2>Lottery</h2>
+
+      <div class="enter-msg">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+          doloremque, tempore debitis temporibus amet eum.
+        </p>
+
+        <div class="enter-name">
+          <label>Enter your name player!</label>
+          <input type="text" v-model="value" />
+        </div>
       </div>
-      <footer class="modal-footer">
-        <slot name="footer">
-          <div class="navi-btns"></div>
-        </slot>
-      </footer>
+
+      <button type="button" class="btn-close" @click="close">Enter</button>
     </div>
   </div>
 </template>
@@ -29,16 +26,41 @@ export default {
   data() {
     return {
       value: "",
-      isCorrect: false,
     };
   },
+
   methods: {
     close() {
-      this.$emit("close");
+      this.$emit("close", this.value);
     },
   },
 };
 </script>
 
 <style scoped>
+/*<div class="modal">
+      <header class="modal-header">
+        <slot name="header"> Lottery </slot>
+      </header>
+      <div class="modal-body">
+        <slot name="body">
+          <div class="enter-msg">
+            Cześć. Witaj na stronie loterii. Aby przejsc dalej podaj swoje imie
+            i potwierdz że jesteś pełnoletni!
+          </div>
+        </slot>
+      </div>
+      <div class="modal-footer">
+        <slot name="footer">
+          <button type="button" class="btn-close" @click="close">Enter</button>
+        </slot>
+      </div>
+    </div>*/
 </style>
+
+
+
+
+
+
+      

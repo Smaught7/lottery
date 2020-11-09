@@ -11,7 +11,9 @@
         <div class="user-name" v-if="value == ''">Hello {{ anonimous }}</div>
         <div class="user-name" v-else>Hello {{ value }}</div>
       </div>
-      <div class="result-lottery-container">Poznaj wyniki</div>
+      <div class="result-lottery-container">
+        <ResultsComponent />
+      </div>
     </div>
     <IfAdultModalComponent
       v-show="isModalVisible"
@@ -22,10 +24,11 @@
 
 <script>
 import IfAdultModalComponent from "@/components/IfAdultModalComponent.vue";
+import ResultsComponent from "@/components/ResultsComponent.vue";
 
 export default {
   name: "LotteryMainComponent",
-  components: { IfAdultModalComponent },
+  components: { IfAdultModalComponent, ResultsComponent },
   data() {
     return {
       value: "",

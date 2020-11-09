@@ -38,24 +38,6 @@ export default {
 </script>
 
 <style scoped>
-/*<div class="modal">
-      <header class="modal-header">
-        <slot name="header"> Lottery </slot>
-      </header>
-      <div class="modal-body">
-        <slot name="body">
-          <div class="enter-msg">
-            Cześć. Witaj na stronie loterii. Aby przejsc dalej podaj swoje imie
-            i potwierdz że jesteś pełnoletni!
-          </div>
-        </slot>
-      </div>
-      <div class="modal-footer">
-        <slot name="footer">
-          <button type="button" class="btn-close" @click="close">Enter</button>
-        </slot>
-      </div>
-    </div>*/
 </style>
 
 

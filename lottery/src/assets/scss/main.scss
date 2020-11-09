@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@300;400&display=swap');
 @import "lotteryComponent.scss";
 @import "ifAdultModal.scss";
+@import "resultsComponent.scss";
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
     font-family: 'Turret Road', cursive;
 }
